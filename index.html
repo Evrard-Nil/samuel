@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>Auto SMS Redirect</title>
-<script>
-  window.onload = function() {
-    // Attempt to redirect to the SMS app
-    // This is often blocked by browsers for security and user experience reasons.
-    // It's best to use a user-initiated click event instead.
-    window.location.href = "sms:+1234567890&body=Hello%20there!";
-
-    // Alternatively, you could try:
-    // window.open("sms:+1234567890&body=Hello%20there!", "_blank");
-    // However, window.open is also often blocked by popup blockers if not user-initiated.
-  };
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="0; URL=sms:+33757597090?body=G" />
+  <title>Votez Ubulle</title>
 </head>
 <body>
-
-<h1>Attempting to redirect to SMS app...</h1>
-<p>If your browser blocks the automatic redirect, you can still click the link below:</p>
-<p>
-  <a href="sms:+1234567890&body=Hello%20there!">Send SMS to +1 234 567 890</a>
-</p>
-
+  <div class="container">
+    <a class="btn" href="sms:+33757597090?body=G">Envoyer SMS</a>
+    <p>
+      Si la redirection ne fonctionne pas automatiquement, 
+      <a href="sms:+33757597090?body=G">cliquez ici</a> pour envoyer un SMS.
+    </p>
+  </div>
 </body>
 </html>
