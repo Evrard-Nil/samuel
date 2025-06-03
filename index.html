@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Auto SMS Redirect</title>
+<script>
+  window.onload = function() {
+    // Attempt to redirect to the SMS app
+    // This is often blocked by browsers for security and user experience reasons.
+    // It's best to use a user-initiated click event instead.
+    window.location.href = "sms:+1234567890&body=Hello%20there!";
+
+    // Alternatively, you could try:
+    // window.open("sms:+1234567890&body=Hello%20there!", "_blank");
+    // However, window.open is also often blocked by popup blockers if not user-initiated.
+  };
+</script>
+</head>
+<body>
+
+<h1>Attempting to redirect to SMS app...</h1>
+<p>If your browser blocks the automatic redirect, you can still click the link below:</p>
+<p>
+  <a href="sms:+1234567890&body=Hello%20there!">Send SMS to +1 234 567 890</a>
+</p>
+
+</body>
+</html>
